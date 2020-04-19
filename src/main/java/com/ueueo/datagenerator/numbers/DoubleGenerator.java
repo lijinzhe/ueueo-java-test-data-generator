@@ -13,11 +13,7 @@ import java.util.Random;
  */
 public class DoubleGenerator extends RandomBasedGeneratorBase implements
         Generator<Double> {
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.weiming.datagenerator.core.Generator#generate()
-     */
+
     @Override
     public Double generate() {
         return random.nextDouble();

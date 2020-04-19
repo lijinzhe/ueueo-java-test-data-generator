@@ -165,11 +165,6 @@ public class EnglishWordGenerator extends GeneratorWrapperBase<String> implement
         super(new RandomSequenceArrayBasedGenerator<String>(words));
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.weiming.datagenerator.core.Generator#generate()
-     */
     @Override
     public String generate() {
         return generator.generate();

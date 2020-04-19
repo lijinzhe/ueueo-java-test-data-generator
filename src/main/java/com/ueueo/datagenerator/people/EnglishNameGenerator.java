@@ -27,11 +27,6 @@ public class EnglishNameGenerator implements Generator<String> {
      */
     private Generator<String> femaleNameGenerator = new EnglishFemaleNameGenerator();
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.weiming.datagenerator.core.Generator#generate()
-     */
     @Override
     public String generate() {
         return (random.nextDouble() < 0.5) ? maleNameGenerator.generate()

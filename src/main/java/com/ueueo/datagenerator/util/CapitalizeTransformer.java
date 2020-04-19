@@ -6,9 +6,6 @@ package com.ueueo.datagenerator.util;
  * @author Agustin Barto <abarto@gmail.com>
  */
 public class CapitalizeTransformer implements Transformer<String, String> {
-    /* (non-Javadoc)
-     * @see com.weiming.datagenerator.util.Transformer#transform(java.lang.Object)
-     */
     @Override
     public String transform(String input) {
         return new StringBuffer(input.length())

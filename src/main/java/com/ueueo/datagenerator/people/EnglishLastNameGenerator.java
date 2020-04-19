@@ -63,11 +63,6 @@ public class EnglishLastNameGenerator extends GeneratorWrapperBase<String> imple
         super(new RandomSequenceArrayBasedGenerator<String>(lastNames));
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.weiming.datagenerator.core.Generator#generate()
-     */
     @Override
     public String generate() {
         return generator.generate();

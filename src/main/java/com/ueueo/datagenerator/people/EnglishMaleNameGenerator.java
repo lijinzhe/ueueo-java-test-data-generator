@@ -61,11 +61,6 @@ public class EnglishMaleNameGenerator extends GeneratorWrapperBase<String> imple
         super(new RandomSequenceArrayBasedGenerator<String>(names));
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.weiming.datagenerator.core.Generator#generate()
-     */
     @Override
     public String generate() {
         return generator.generate();
