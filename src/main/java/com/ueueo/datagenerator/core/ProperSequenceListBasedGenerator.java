@@ -8,38 +8,35 @@ import java.util.List;
  * contained {@link List} extracting them in the proper sequence (as returned
  * by an {@link Iterator} instance. Once all the elements of the list were
  * returned as generated data items, the sequence is restarted.
- * 
- * @author Agustin Barto <abarto@gmail.com>
  *
  * @param <T> Type of data item to generate.
+ *
+ * @author Agustin Barto <abarto@gmail.com>
  */
 public class ProperSequenceListBasedGenerator<T> extends
-		ListBasedGeneratorBase<T> implements Generator<T> {
-	/**
-	 * Iterator of the {@link List} of values.
-	 */
-	private Iterator<T> iterator;
+        ListBasedGeneratorBase<T> implements Generator<T> {
+    /**
+     * Iterator of the {@link List} of values.
+     */
+    private Iterator<T> iterator;
 
-	/**
-	 * Constructor.
-	 * 
-	 * @param values A {@link List} of values that will be used to generate
-	 * data items.
-	 */
-	public ProperSequenceListBasedGenerator(List<T> values) {
-		super(values);
-		iterator = values.iterator();
-	}
+    /**
+     * Constructor.
+     *
+     * @param values A {@link List} of values that will be used to generate
+     *               data items.
+     */
+    public ProperSequenceListBasedGenerator(List<T> values) {
+        super(values);
+        iterator = values.iterator();
+    }
 
-	/* (non-Javadoc)
-	 * @see com.weiming.datagenerator.core.Generator#generate()
-	 */
-	@Override
-	public T generate() {
-		if (!iterator.hasNext()) {
-			iterator = values.iterator();
-		}
-		
-		return iterator.next();
-	}	
+    @Override
+    public T generate() {
+        if (!iterator.hasNext()) {
+            iterator = values.iterator();
+        }
+
+        return iterator.next();
+    }
 }

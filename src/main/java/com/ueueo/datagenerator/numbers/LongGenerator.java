@@ -7,16 +7,13 @@ import java.util.Random;
 
 /**
  * Generate {@link Long} data items as returned by
- * {@link Random#nextLong()}. 
- * 
- * @author Agustin Barto <abarto@gmail.com> 
+ * {@link Random#nextLong()}.
+ *
+ * @author Agustin Barto <abarto@gmail.com>
  */
 public class LongGenerator extends RandomBasedGeneratorBase implements Generator<Long> {
-	/* (non-Javadoc)
-	 * @see com.weiming.datagenerator.core.Generator#generate()
-	 */
-	@Override
-	public Long generate() {
-		return random.nextLong();
-	}
+    @Override
+    public Long generate() {
+        return random.nextLong();
+    }
 }
