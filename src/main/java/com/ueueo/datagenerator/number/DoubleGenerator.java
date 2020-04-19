@@ -1,7 +1,7 @@
-package com.ueueo.datagenerator.numbers;
+package com.ueueo.datagenerator.number;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.RandomBasedGeneratorBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractRandomGenerator;
 
 import java.util.Random;
 
@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class DoubleGenerator extends RandomBasedGeneratorBase implements
+public class DoubleGenerator extends AbstractRandomGenerator implements
         Generator<Double> {
 
     @Override

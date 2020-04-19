@@ -1,6 +1,6 @@
 package com.ueueo.datagenerator.people;
 
-import com.ueueo.datagenerator.core.Generator;
+import com.ueueo.datagenerator.core.base.Generator;
 
 import java.util.Random;
 

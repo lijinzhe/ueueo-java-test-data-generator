@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractListGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -16,7 +19,7 @@ import java.util.List;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ShuffledSequenceListBasedGenerator<T> extends ListBasedGeneratorBase<T> implements Generator<T> {
+public class ShuffledSequenceListGenerator<T> extends AbstractListGenerator<T> implements Generator<T> {
     /**
      * Indicates that the list of values should be re-shuffled after exhausting
      * the sequence.
@@ -37,7 +40,7 @@ public class ShuffledSequenceListBasedGenerator<T> extends ListBasedGeneratorBas
      * @param values    A {@link List} of values to be used to generate data
      *                  items.
      */
-    public ShuffledSequenceListBasedGenerator(Boolean reShuffle, List<T> values) {
+    public ShuffledSequenceListGenerator(Boolean reShuffle, List<T> values) {
         super(new ArrayList<T>(values));
         Collections.shuffle(this.values);
         iterator = this.values.iterator();

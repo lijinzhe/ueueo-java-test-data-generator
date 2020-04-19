@@ -1,6 +1,6 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
+import com.ueueo.datagenerator.core.base.Generator;
 import com.ueueo.datagenerator.core.MultiGenerator;
 
 import java.text.MessageFormat;

@@ -1,7 +1,7 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorCollectionWrapperBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorCollectionWrapper;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -12,7 +12,7 @@ import java.util.Iterator;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class JoiningGenerator extends GeneratorCollectionWrapperBase implements Generator<String> {
+public class JoiningGenerator extends AbstractGeneratorCollectionWrapper implements Generator<String> {
     /**
      * Separator to be put in between the data items provided by the wrapped
      * generators.

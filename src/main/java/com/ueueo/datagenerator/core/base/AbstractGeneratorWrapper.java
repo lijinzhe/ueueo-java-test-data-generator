@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 /**
  * An abstract class to be extended by classes that will process the values
@@ -8,7 +8,7 @@ package com.ueueo.datagenerator.core;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public abstract class GeneratorWrapperBase<T> {
+public abstract class AbstractGeneratorWrapper<T> {
     /**
      * The wrapped {@link Generator} instance to be used by the descendants of
      * this class.
@@ -20,7 +20,7 @@ public abstract class GeneratorWrapperBase<T> {
      *
      * @param generator The wrapped {@link Generator} instance.
      */
-    public GeneratorWrapperBase(Generator<T> generator) {
+    public AbstractGeneratorWrapper(Generator<T> generator) {
         super();
         this.generator = generator;
     }

@@ -1,15 +1,15 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorWrapperBase;
-import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorWrapper;
+import com.ueueo.datagenerator.core.RandomSequenceArrayGenerator;
 
 /**
  * Generates random English words.
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class EnglishWordGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class EnglishWordGenerator extends AbstractGeneratorWrapper<String> implements Generator<String> {
     /**
      * A list of 1000 of the most common English words.
      */
@@ -162,7 +162,7 @@ public class EnglishWordGenerator extends GeneratorWrapperBase<String> implement
      * Constructor.
      */
     public EnglishWordGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(words));
+        super(new RandomSequenceArrayGenerator<String>(words));
     }
 
     @Override

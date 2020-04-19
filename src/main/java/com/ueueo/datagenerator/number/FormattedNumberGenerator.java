@@ -1,7 +1,7 @@
-package com.ueueo.datagenerator.numbers;
+package com.ueueo.datagenerator.number;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorWrapperBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorWrapper;
 
 import java.text.DateFormat;
 import java.text.NumberFormat;
@@ -16,7 +16,7 @@ import java.util.Date;
  * @author Agustin Barto <abarto@gmail.com>
  * @see DateFormat
  */
-public class FormattedNumberGenerator<T extends Number> extends GeneratorWrapperBase<T> implements Generator<String> {
+public class FormattedNumberGenerator<T extends Number> extends AbstractGeneratorWrapper<T> implements Generator<String> {
 
     /** The number format. */
     private NumberFormat numberFormat;

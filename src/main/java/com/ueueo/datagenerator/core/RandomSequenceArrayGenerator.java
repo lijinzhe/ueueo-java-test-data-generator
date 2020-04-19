@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractArrayGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.Random;
 
 /**
@@ -10,7 +13,7 @@ import java.util.Random;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class RandomSequenceArrayBasedGenerator<T> extends ArrayBasedGeneratorBase<T> implements Generator<T> {
+public class RandomSequenceArrayGenerator<T> extends AbstractArrayGenerator<T> implements Generator<T> {
     /**
      * A {@link Random} instance to generate the index of the data item
      * contained within the array.
@@ -22,7 +25,7 @@ public class RandomSequenceArrayBasedGenerator<T> extends ArrayBasedGeneratorBas
      *
      * @param values An array of values from which to extract the data items.
      */
-    public RandomSequenceArrayBasedGenerator(T... values) {
+    public RandomSequenceArrayGenerator(T... values) {
         super(values);
         random = new Random();
     }

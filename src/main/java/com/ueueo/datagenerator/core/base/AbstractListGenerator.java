@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ListBasedGeneratorBase<T> {
+public class AbstractListGenerator<T> {
     /**
      * The values that will be used to generate data items.
      */
@@ -23,7 +23,7 @@ public class ListBasedGeneratorBase<T> {
      * @param values A {@link List} of values to be used to generate data
      *               items.
      */
-    public ListBasedGeneratorBase(List<T> values) {
+    public AbstractListGenerator(List<T> values) {
         super();
         this.values = values;
     }

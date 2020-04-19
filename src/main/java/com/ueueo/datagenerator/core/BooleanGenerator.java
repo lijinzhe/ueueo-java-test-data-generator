@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractRandomGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.Random;
 
 /**
@@ -8,7 +11,7 @@ import java.util.Random;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class BooleanGenerator extends RandomBasedGeneratorBase implements Generator<Boolean> {
+public class BooleanGenerator extends AbstractRandomGenerator implements Generator<Boolean> {
     @Override
     public Boolean generate() {
         return random.nextBoolean();

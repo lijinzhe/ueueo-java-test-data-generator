@@ -1,7 +1,7 @@
-package com.ueueo.datagenerator.numbers;
+package com.ueueo.datagenerator.number;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.RandomBasedGeneratorBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractRandomGenerator;
 
 import java.math.BigInteger;
 
@@ -12,7 +12,7 @@ import java.math.BigInteger;
  * @author Agustin Barto <abarto@gmail.com>
  * @see BigInteger
  */
-public class BigIntegerGenerator extends RandomBasedGeneratorBase implements Generator<BigInteger> {
+public class BigIntegerGenerator extends AbstractRandomGenerator implements Generator<BigInteger> {
     /**
      * Number of bits to be supplied to the {@link BigInteger} constructor.
      */

@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractCollectionGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,7 +13,7 @@ import java.util.Set;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class SetGenerator<T> extends CollectionGeneratorBase<T, Set<T>> {
+public class SetGenerator<T> extends AbstractCollectionGenerator<T, Set<T>> {
     /**
      * Constructor.
      *

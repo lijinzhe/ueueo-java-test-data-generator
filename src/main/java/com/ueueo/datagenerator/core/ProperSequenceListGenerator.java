@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractListGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.Iterator;
 import java.util.List;
 
@@ -13,8 +16,8 @@ import java.util.List;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ProperSequenceListBasedGenerator<T> extends
-        ListBasedGeneratorBase<T> implements Generator<T> {
+public class ProperSequenceListGenerator<T> extends
+        AbstractListGenerator<T> implements Generator<T> {
     /**
      * Iterator of the {@link List} of values.
      */
@@ -26,7 +29,7 @@ public class ProperSequenceListBasedGenerator<T> extends
      * @param values A {@link List} of values that will be used to generate
      *               data items.
      */
-    public ProperSequenceListBasedGenerator(List<T> values) {
+    public ProperSequenceListGenerator(List<T> values) {
         super(values);
         iterator = values.iterator();
     }

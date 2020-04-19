@@ -1,6 +1,6 @@
-package com.ueueo.datagenerator.numbers;
+package com.ueueo.datagenerator.number;
 
-import com.ueueo.datagenerator.core.Generator;
+import com.ueueo.datagenerator.core.base.Generator;
 
 /**
  * Generate {@link Long} data items in a sequence starting from a specific

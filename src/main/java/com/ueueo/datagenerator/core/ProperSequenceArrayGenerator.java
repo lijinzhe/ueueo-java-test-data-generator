@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractArrayGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 /**
  * Generates data items of type <code>T</code> using the values stored in the
  * contained array and extracting them in the proper sequence. If
@@ -13,7 +16,7 @@ package com.ueueo.datagenerator.core;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ProperSequenceArrayGenerator<T> extends ArrayBasedGeneratorBase<T> implements Generator<T> {
+public class ProperSequenceArrayGenerator<T> extends AbstractArrayGenerator<T> implements Generator<T> {
     /**
      * Index of the data item contained within the array.
      */

@@ -1,8 +1,8 @@
 package com.ueueo.datagenerator.people;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorWrapperBase;
-import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorWrapper;
+import com.ueueo.datagenerator.core.RandomSequenceArrayGenerator;
 
 /**
  * Generates random female names. The list of names was taken from the top 200
@@ -10,7 +10,7 @@ import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class EnglishFemaleNameGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class EnglishFemaleNameGenerator extends AbstractGeneratorWrapper<String> implements Generator<String> {
     /**
      * The most common female names in the United States.
      */
@@ -59,7 +59,7 @@ public class EnglishFemaleNameGenerator extends GeneratorWrapperBase<String> imp
      * Constructor.
      */
     public EnglishFemaleNameGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(names));
+        super(new RandomSequenceArrayGenerator<String>(names));
     }
 
     @Override

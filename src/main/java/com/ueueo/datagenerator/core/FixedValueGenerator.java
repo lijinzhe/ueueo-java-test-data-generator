@@ -1,5 +1,7 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.Generator;
+
 /**
  * Generates a fixed value of type <code>T</code>.<p>If <code>g</code> is a
  * {@link FixedValueGenerator}, then for all <code>x</code>, and <code>y</code>

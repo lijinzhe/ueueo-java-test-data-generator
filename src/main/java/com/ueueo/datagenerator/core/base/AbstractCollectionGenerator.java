@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 import java.util.Collection;
 
@@ -12,7 +12,7 @@ import java.util.Collection;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public abstract class CollectionGeneratorBase<S, T extends Collection<S>> extends GeneratorWrapperBase<S> implements Generator<T> {
+public abstract class AbstractCollectionGenerator<S, T extends Collection<S>> extends AbstractGeneratorWrapper<S> implements Generator<T> {
     /**
      * The amount of elements to generate.
      */
@@ -25,7 +25,7 @@ public abstract class CollectionGeneratorBase<S, T extends Collection<S>> extend
      * @param generator The {@link Generator} used to create the elements of
      *                  the collection.
      */
-    public CollectionGeneratorBase(int count, Generator<S> generator) {
+    public AbstractCollectionGenerator(int count, Generator<S> generator) {
         super(generator);
         this.count = count;
     }

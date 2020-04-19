@@ -1,7 +1,7 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorCollectionWrapperBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorCollectionWrapper;
 
 import java.util.Collection;
 
@@ -12,7 +12,7 @@ import java.util.Collection;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ConcatenatingGenerator extends GeneratorCollectionWrapperBase implements Generator<String> {
+public class ConcatenatingGenerator extends AbstractGeneratorCollectionWrapper implements Generator<String> {
 
     /**
      * Instantiates a new concatenating generator.

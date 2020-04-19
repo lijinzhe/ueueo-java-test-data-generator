@@ -1,7 +1,7 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorCollectionWrapperBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorCollectionWrapper;
 
 import java.util.Collection;
 
@@ -13,7 +13,7 @@ import java.util.Collection;
  * @author Agustin Barto <abarto@gmail.com>
  */
 
-public class StringFormatGenerator extends GeneratorCollectionWrapperBase implements Generator<String> {
+public class StringFormatGenerator extends AbstractGeneratorCollectionWrapper implements Generator<String> {
 
     /** The format. */
     private String format;

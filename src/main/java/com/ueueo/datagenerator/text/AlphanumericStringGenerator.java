@@ -1,6 +1,6 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
+import com.ueueo.datagenerator.core.base.Generator;
 import org.apache.commons.lang3.RandomStringUtils;
 
 /**

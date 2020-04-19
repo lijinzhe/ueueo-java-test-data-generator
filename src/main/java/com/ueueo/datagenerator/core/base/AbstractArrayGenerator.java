@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 /**
  * An abstracts class to be extended by classes that will generate data items
@@ -9,7 +9,7 @@ package com.ueueo.datagenerator.core;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public abstract class ArrayBasedGeneratorBase<T> {
+public abstract class AbstractArrayGenerator<T> {
     /**
      * The values that will be used to generate data items.
      */
@@ -20,7 +20,7 @@ public abstract class ArrayBasedGeneratorBase<T> {
      *
      * @param values An array of values from which to extract the data items.
      */
-    public ArrayBasedGeneratorBase(T... values) {
+    public AbstractArrayGenerator(T... values) {
         this.values = values;
     }
 }

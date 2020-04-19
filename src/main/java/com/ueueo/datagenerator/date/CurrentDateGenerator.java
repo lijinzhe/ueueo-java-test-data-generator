@@ -1,6 +1,6 @@
-package com.ueueo.datagenerator.dates;
+package com.ueueo.datagenerator.date;
 
-import com.ueueo.datagenerator.core.Generator;
+import com.ueueo.datagenerator.core.base.Generator;
 
 import java.util.Date;
 

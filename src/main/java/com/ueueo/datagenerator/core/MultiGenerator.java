@@ -1,5 +1,7 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.Generator;
+
 /**
  * Generates an array of data items using multiple generators.
  *

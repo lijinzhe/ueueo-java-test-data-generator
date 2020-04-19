@@ -1,7 +1,7 @@
 package com.ueueo.datagenerator.text;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorWrapperBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorWrapper;
 
 /**
  * Uses the contained {@link Generator} to generate data items calling
@@ -9,7 +9,7 @@ import com.ueueo.datagenerator.core.GeneratorWrapperBase;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ToStringGenerator extends GeneratorWrapperBase<Object> implements
+public class ToStringGenerator extends AbstractGeneratorWrapper<Object> implements
         Generator<String> {
     /**
      * Constructor.

@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractCollectionGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +13,7 @@ import java.util.List;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ListGenerator<T> extends CollectionGeneratorBase<T, List<T>> {
+public class ListGenerator<T> extends AbstractCollectionGenerator<T, List<T>> {
     /**
      * Constructor.
      *

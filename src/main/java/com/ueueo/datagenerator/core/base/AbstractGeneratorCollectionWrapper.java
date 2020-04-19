@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -9,7 +9,7 @@ import java.util.Collection;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public abstract class GeneratorCollectionWrapperBase {
+public abstract class AbstractGeneratorCollectionWrapper {
     /**
      * Wrapped generators..
      */
@@ -20,7 +20,7 @@ public abstract class GeneratorCollectionWrapperBase {
      *
      * @param generators Wrapped generators.
      */
-    public GeneratorCollectionWrapperBase(Generator<?>... generators) {
+    public AbstractGeneratorCollectionWrapper(Generator<?>... generators) {
         super();
         this.generators = Arrays.asList(generators);
     }
@@ -30,7 +30,7 @@ public abstract class GeneratorCollectionWrapperBase {
      *
      * @param generators Wrapped generators.
      */
-    public GeneratorCollectionWrapperBase(Collection<Generator<?>> generators) {
+    public AbstractGeneratorCollectionWrapper(Collection<Generator<?>> generators) {
         super();
         this.generators = generators;
     }

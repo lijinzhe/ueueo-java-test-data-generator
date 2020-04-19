@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 /**
  * The core of the jeneratedata library. An implementation of this interface

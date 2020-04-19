@@ -1,8 +1,8 @@
 package com.ueueo.datagenerator.people;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorWrapperBase;
-import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorWrapper;
+import com.ueueo.datagenerator.core.RandomSequenceArrayGenerator;
 
 /**
  * 中文名字生成器
@@ -10,7 +10,7 @@ import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
  * @author Lee
  * @date 2019-04-20 14:35
  */
-public class ChineseNameGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class ChineseNameGenerator extends AbstractGeneratorWrapper<String> implements Generator<String> {
 
     private static final String[] names = new String[]{"彭万里", "高大山", "谢大海", "马宏宇", "林莽",
             "黄强辉", "章汉夫", "范长江", "林君雄", "谭平山", "朱希亮", "李四光", "甘铁生", "张伍绍",
@@ -60,7 +60,7 @@ public class ChineseNameGenerator extends GeneratorWrapperBase<String> implement
     };
 
     public ChineseNameGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<>(names));
+        super(new RandomSequenceArrayGenerator<>(names));
     }
 
     @Override

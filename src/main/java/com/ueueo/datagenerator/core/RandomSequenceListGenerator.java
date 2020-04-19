@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractListGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.List;
 import java.util.Random;
 
@@ -11,8 +14,8 @@ import java.util.Random;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class RandomSequenceListBasedGenerator<T> extends
-        ListBasedGeneratorBase<T> implements Generator<T> {
+public class RandomSequenceListGenerator<T> extends
+        AbstractListGenerator<T> implements Generator<T> {
     /**
      * A {@link Random} instance to generate the index of the data item
      * contained within the array.
@@ -25,7 +28,7 @@ public class RandomSequenceListBasedGenerator<T> extends
      * @param values A {@link List} of values to be used to generate data
      *               items.
      */
-    public RandomSequenceListBasedGenerator(List<T> values) {
+    public RandomSequenceListGenerator(List<T> values) {
         super(values);
         random = new Random();
     }

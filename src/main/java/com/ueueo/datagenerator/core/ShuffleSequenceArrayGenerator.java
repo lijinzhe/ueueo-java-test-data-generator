@@ -1,5 +1,8 @@
 package com.ueueo.datagenerator.core;
 
+import com.ueueo.datagenerator.core.base.AbstractArrayGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +18,7 @@ import java.util.List;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class ShuffleSequenceArrayBasedGenerator<T> extends ArrayBasedGeneratorBase<T> implements Generator<T> {
+public class ShuffleSequenceArrayGenerator<T> extends AbstractArrayGenerator<T> implements Generator<T> {
     /**
      * Index of the data item contained within the array.
      */
@@ -34,7 +37,7 @@ public class ShuffleSequenceArrayBasedGenerator<T> extends ArrayBasedGeneratorBa
      *                  a sequence is exhausted.
      * @param values    An array of values from which to extract the data items.
      */
-    public ShuffleSequenceArrayBasedGenerator(Boolean reShuffle, T... values) {
+    public ShuffleSequenceArrayGenerator(Boolean reShuffle, T... values) {
         super(values);
 
         this.reShuffle = reShuffle;

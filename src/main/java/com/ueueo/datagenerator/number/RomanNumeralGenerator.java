@@ -1,14 +1,14 @@
-package com.ueueo.datagenerator.numbers;
+package com.ueueo.datagenerator.number;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.RandomBasedGeneratorBase;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractRandomGenerator;
 
 /**
  * Generates random roman numerals.
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class RomanNumeralGenerator extends RandomBasedGeneratorBase implements Generator<String> {
+public class RomanNumeralGenerator extends AbstractRandomGenerator implements Generator<String> {
     @Override
     public String generate() {
         StringBuffer stringBuffer = new StringBuffer();

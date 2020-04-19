@@ -1,4 +1,4 @@
-package com.ueueo.datagenerator.core;
+package com.ueueo.datagenerator.core.base;
 
 import java.util.Random;
 
@@ -8,13 +8,13 @@ import java.util.Random;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public abstract class RandomBasedGeneratorBase {
+public abstract class AbstractRandomGenerator {
     protected Random random;
 
     /**
      * Constructor.
      */
-    public RandomBasedGeneratorBase() {
+    public AbstractRandomGenerator() {
         super();
         random = new Random();
     }
@@ -25,7 +25,7 @@ public abstract class RandomBasedGeneratorBase {
      * @param random A {@link Random} instance to be used to generate data
      *               items.
      */
-    public RandomBasedGeneratorBase(Random random) {
+    public AbstractRandomGenerator(Random random) {
         super();
         this.random = random;
     }

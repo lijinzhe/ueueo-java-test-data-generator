@@ -1,8 +1,8 @@
 package com.ueueo.datagenerator.people;
 
-import com.ueueo.datagenerator.core.Generator;
-import com.ueueo.datagenerator.core.GeneratorWrapperBase;
-import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
+import com.ueueo.datagenerator.core.base.Generator;
+import com.ueueo.datagenerator.core.base.AbstractGeneratorWrapper;
+import com.ueueo.datagenerator.core.RandomSequenceArrayGenerator;
 
 /**
  * Generates random last names. The list of surnames was taken from the top 200
@@ -10,7 +10,7 @@ import com.ueueo.datagenerator.core.RandomSequenceArrayBasedGenerator;
  *
  * @author Agustin Barto <abarto@gmail.com>
  */
-public class EnglishLastNameGenerator extends GeneratorWrapperBase<String> implements Generator<String> {
+public class EnglishLastNameGenerator extends AbstractGeneratorWrapper<String> implements Generator<String> {
     /**
      * The most common last names in the United States.
      */
@@ -60,7 +60,7 @@ public class EnglishLastNameGenerator extends GeneratorWrapperBase<String> imple
      * Constructor.
      */
     public EnglishLastNameGenerator() {
-        super(new RandomSequenceArrayBasedGenerator<String>(lastNames));
+        super(new RandomSequenceArrayGenerator<String>(lastNames));
     }
 
     @Override
