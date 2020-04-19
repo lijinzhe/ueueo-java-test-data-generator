@@ -6,7 +6,7 @@
 
     <groupId>lijinzhe</groupId>
     <artifactId>ueueo-java-test-data-generator</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>
